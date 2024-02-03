@@ -99,7 +99,7 @@ export function Home() {
                 </div>
             </section>
             {/*Accordion*/}
-            <Accordion type="single" collapsible className="pb-4 m-auto w-2/4">
+            <Accordion type="single" collapsible className="pb-4 m-auto w-2/4 min-w-10">
                 <AccordionItem value="item-1">
                     <AccordionTrigger>Gibt es einen kostenlosen Lieferservice?</AccordionTrigger>
                     <AccordionContent>
