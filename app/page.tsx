@@ -12,13 +12,10 @@ import {
 } from "@/components/ui/accordion";
 
 import { Navigation } from "@/components/navigation";
-import { NavBottom } from "@/components/nav-bottom";
 import { Footer } from "@/components/footer";
 
-import { data } from "./_data";
 
-
-export function Index() {
+export function Home() {
     return (
         <main className="bg-white dark:bg-gray-900">
             <link href={"https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"} rel="stylesheet"/>
@@ -101,9 +98,6 @@ export function Index() {
                     </form>
                 </div>
             </section>
-            {/*Nav-Bottom*/}
-            <NavBottom>
-            </NavBottom>
             {/*Accordion*/}
             <Accordion type="single" collapsible className="pb-4 m-auto w-2/4">
                 <AccordionItem value="item-1">
@@ -139,4 +133,4 @@ export function Index() {
     )
 }
 
-export default Index;
+export default Home;
