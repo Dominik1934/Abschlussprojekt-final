@@ -19,15 +19,13 @@ export function Home() {
     return (
         <main className="bg-white dark:bg-gray-900">
             <link href={"https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"} rel="stylesheet"/>
-            <Navigation>
-            </Navigation>
+            <Navigation />
             {/*Banner*/}
             <div id="marketing-banner"
                  className="fixed z-50 flex flex-col md:flex-row justify-between w-[calc(100%-2rem)] p-4 -translate-x-1/2 bg-white border border-gray-100 rounded-lg shadow-sm lg:max-w-7xl left-1/2 top-4 dark:bg-gray-700 dark:border-gray-600">
                 <div className="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
                     <a href="#"
                        className="flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src="/logo.svg" className="h-6 me-2" alt="24/7 Logo"/>
                         <span
                             className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">24/7</span>
@@ -66,11 +64,11 @@ export function Home() {
                         </svg>
                     </a>
                     <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Wir
-                        sind für die Menschen da</h1>
+                        liefern Ihnen <span className="bg-[url('/jumbotron-text-clip.jpg')] bg-cover bg-clip-text dark:bg-blend-lighten text-transparent text-8xl">Frisches!</span></h1>
                     <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">
                         Unser Ziel hier bei 24/7 ist Ihnen faire, naturfreundliche, günstige Produkte zu verkaufen.
                         Wir konnten bereits über 10+ Millionen Kunden zufriedenstellen.<br/>
-                        Melden Sie sich für unseren wöchentlichen Newsletter an!
+                        Melden Sie sich hier für unseren wöchentlichen Newsletter an!
                     </p>
                     <form className="w-full max-w-md mx-auto">
                         <label htmlFor="default-email"
@@ -99,7 +97,7 @@ export function Home() {
                 </div>
             </section>
             {/*Accordion*/}
-            <Accordion type="single" collapsible className="pb-4 m-auto w-2/4 min-w-10">
+            <Accordion type="single" collapsible className="py-4 px-6 mx-auto max-w-screen-lg">
                 <AccordionItem value="item-1">
                     <AccordionTrigger>Gibt es einen kostenlosen Lieferservice?</AccordionTrigger>
                     <AccordionContent>
@@ -121,13 +119,11 @@ export function Home() {
                 <AccordionItem value="item-4">
                     <AccordionTrigger>Sind ihre Produkte umweltfreundlich?</AccordionTrigger>
                     <AccordionContent>
-                        Natürlich, weiter Informationen zu Umweltfreundlichkeit <a href="#"> hier.</a>
+                        Natürlich, weitere Informationen zu Umweltfreundlichkeit <a href="#" className="underline"> hier.</a>
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>
-            <Footer>
-            </Footer>
-            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+            <Footer />
             <script src={"https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"}></script>
         </main>
     )

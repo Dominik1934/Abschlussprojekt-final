@@ -6,6 +6,7 @@ import { useTheme } from "next-themes"
 import 'flowbite';
 import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 import {Button} from "@/components/ui/button";
+import Link from "next/link"
 
 
 function Navigation() {
@@ -13,7 +14,7 @@ function Navigation() {
 
     return (
         <main className="bg-white dark:bg-gray-900">
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet"/>
+            <link href={"https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"} rel="stylesheet"/>
             {/*Nav*/}
             <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900 z-30">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
@@ -94,7 +95,7 @@ function Navigation() {
                         <ul className="z-30 hidden mb-4 space-y-4 md:mb-0 md:block"
                             aria-labelledby="mega-menu-full-image-button">
                             <li>
-                                <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <a href="/produkte/obst-gemuese" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
                                     Obst & Gemüse
                                 </a>
                             </li>
@@ -170,7 +171,7 @@ function Navigation() {
                 </div>
             </nav>
             {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+            <script src={"https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"}></script>
         </main>
     )
 }

@@ -11,16 +11,20 @@ interface RootLayoutProps {
   children: ReactNode;
 }
 
-const metadata: Metadata = {
+{/*const metadata: Metadata = {
   title: '24/7 Shop',
   description: 'Online-Shop der 24/7 Bank',
-};
+};*/}
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="de" suppressHydrationWarning>
-        <head />
-        <body> {/*className={`${inter.className} max-w-[1580px] mx-auto`}*/}
+        <head>
+            <title>24/7 Shop</title>
+            <meta name="description" content="Online-Shop der 24/7 Bank" />
+            <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+        </head>
+        <body>
             <ThemeProvider
                 attribute="class"
                 defaultTheme="system"
